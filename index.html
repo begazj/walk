@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Take a Walk</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>To walk or not to walk,</h1>
+        <h2><em>...that is the question.</em></h2>
+      </div>
+      <hr />
+      <img
+        src="https://i.pinimg.com/originals/ce/3f/d8/ce3fd80935c32804530bea9cafbec7f6.jpg"
+        width="400"
+      />
+      <hr />
+      <p>
+        It’s funny, walking is one of the basic experiences we are tasked with
+        learning in this life and yet as we grow older, we forget how important
+        it is to put one foot in front of the other. From infancy, parents worry
+        if their child is “on time” with their contemporaries, wondering if
+        she’s falling behind because she doesn’t walk at 9, 12, or 18 months.
+        One can easily grow up thinking that if she is not like everyone else,
+        then she does not fit. It seems so simple, doesn’t it? To put one foot
+        in front of the other, taking one step at a time in order to learn how
+        to push against what is there to keep you down. That’s how we grow, you
+        see. It is with each step, each action that goes against natural forces,
+        that brings you to the top of mountain. That’s the only way to see
+        breath-taking views. So, go for walk and see what you can accomplish.
+        <br />
+      </p>
+      <a
+        href="https://www.walkingforhealth.org.uk/get-walking/why-walk/healthy-minds#:~:text=A%20good%20walk%20can%20do%20wonders%20for%20your%20mental%20wellbeing.&text=It%20improves%20self%2Dperception%20and,those%20who%20are%20depressed%20recover.
+      "
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more about the benefits of walking.</a
+      >
+      <br />
+      <hr />
+      <ul>
+        <span class="instructions">How to go for a walk: </span>
+        <li>
+          <p><strong>Step 1:</strong> Check the weather.</p>
+        </li>
+        <li>
+          <p><strong>Step 2:</strong> Dress for the weather.</p>
+        </li>
+        <li>
+          <p><strong>Step 3:</strong> Choose something to ponder.</p>
+        </li>
+        <li>
+          <p><strong>Step 4:</strong> Take three deep breaths.</p>
+        </li>
+        <li>
+          <p><strong>Step 5:</strong> Put one foot in front of the other.</p>
+        </li>
+        <li>
+          <p>
+            <strong>Step 6:</strong> Keep going until you're satisfied or run
+            out of time.
+          </p>
+        </li>
+      </ul>
+      <button class="motivation-button">Click for Motivation</button>
+      <br />
+      <p class="footer">This page was built by Jen Begazo</p>
+    </div>
+    <script>
+      function motivation() {
+        let name = prompt("What is your name?");
+        let decision = prompt(
+          "On a scale of 1 to 10, how likely are you going to go for a walk today?"
+        );
+
+        let heading = document.querySelector(".instructions");
+
+        if (decision >= 6) {
+          heading.innerHTML =
+            "That's great " +
+            name +
+            "! You are on the cusp of making a good decision for your mental well-being!";
+        } else {
+          heading.innerHTML =
+            "Hmm, that's okay " +
+            name +
+            ", please re-read the steps below for guidance!";
+        }
+      }
+      let motivationButton = document.querySelector(".motivation-button");
+      motivationButton.addEventListener("click", motivation);
+    </script>
+  </body>
+</html>
